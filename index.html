@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenzia viaggi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Esercizi:
+ 1) Implementa una navbar con questi elementi di menu:
+Home
+Saldi
+Welcome Summer
+Last Minute
+Recensioni -->
+    <nav class="navbar navbar-expand-lg collapse-navbar mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- 2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata. -->
+          <img
+            src="./L2-screens/img/travel-logo.-travel-agency-adventure-creative-sign.-png_94779.jpg"
+            alt="logo lorem agency"
+            height="70px"
+            width="70px"
+          />
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseExample">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Saldi</a>
+            </li>
+            <div class="collapse navbar-collapse" id="collapseExample">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-dark" href="#"
+                    >Welcome Summer</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Last Minute</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled text-dark">Recensioni</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-info" type="button">
+                  Search
+                </button>
+              </form>
+            </div>
+        </nav>
+            <!-- 3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto -->
+            <!-- <div class="container">
+    <button class="btn btn-success mb-4" type="buttom">
+        Destinazioni Disponibili
+    </button>
+    <button class="btn btn-success mb-4" type="buttom" id="rimuovi">
+        Nascondi Destinazioni Disponibili
+    </button>
+    
+    <button class="btn btn-success mb-4" type="button"
+    data-bs-toggle="collapse"
+          data-bs-target="#introduction"
+          aria-expanded="false"
+          aria-controls="introduction"
+          id="btnIntro">Home: Nascondi elemento</button> -->
+            <section class="bg-light mb-4 collapse.show" id="introduction">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h1 class="display-4">Lorem Ipsum Agency</h1>
+                    <p class="lead font-italic">
+                      Lorem Ipsum Agency ti accompagnerà alla scoperta della
+                      meravigliosa isola al sud dell'Italia!
+                    </p>
+                    <a href="#" class="btn btn-lg btn-info">Prenota ora</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="./L2-screens/img/landscape/diego-gennaro-Mz6T330_NTg-unsplash.jpg"
+                      class="img-fluid"
+                      alt="sicily"
+                    />
+                  </div>
+                </div>
+
+                <!-- 4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+
+le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default -->
+                <button
+                  class="btn btn-info d-block mb-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#saldi"
+                  aria-expanded="false"
+                  aria-controls="saldi"
+                  id="btnsaldi"
+                >
+                  Saldi
+                </button>
+                <section class="collapse.show" id="saldi">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="section-title">Saldi</h2>
+                    </div>
+                  </div>
+                  <div class="row g-2 m-auto">
+                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
+                      <div class="card">
+                        <img
+                          src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                          class="card-img-top"
+                          alt="..."
+                          height="170px"
+                        />
+                        <div class="card-img-top">
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
+                      <div class="card">
+                        <img
+                          src="./L2-screens/img/landscape/selinunte.jpg"
+                          class="card-img-top"
+                          alt="..."
+                          height="170px"
+                        />
+                        <div class="card-img-top">
+                          <div class="card-body text-center">
+                            <h5>Selinunte</h5>
+                            <p class="card-text">
+                              Tra i più grandi e suggestivi parchi archeologici
+                              d'Europa, il Parco Archeologico di Selinunte si
+                              colloca senza dubbio tra le prime posizioni.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
+                      <div class="card">
+                        <img
+                          src="./L2-screens/img/landscape/etna.jpg"
+                          class="card-img-top"
+                          alt="..."
+                          height="170px"
+                        />
+                        <div class="card-img-top">
+                          <div class="card-body text-center">
+                            <h5>Etna</h5>
+                            <p class="card-text">
+                              L'Etna è il vulcano più grande dell'Europa
+                              (geograficamente parlando), e tra i vulcani più
+                              attivi del mondo.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
+                      <div class="card">
+                        <img
+                          src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                          class="card-img-top"
+                          alt="..."
+                          height="170px"
+                        />
+                        <div class="card-img-top">
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- 5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
+
+In questa sezione dovranno esserci:
+
+6 card per destinazioni per linea a schermo extra large
+3 card per destinazioni per linea a schermo grande (desktop)
+2 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile) -->
+                <button
+                  class="btn btn-info d-block mb-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".multi-collapse"
+                  aria-expanded="false"
+                  aria-controls="welcomeSummer1 "
+                  id="btnWlcomeSummer"
+                >
+                  Welcome Summer
+                </button>
+                <section
+                  class="collapse.show multi-collapse"
+                  id="welcomeSummer"
+                >
+                  <div class="container px-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="section-title">Welcome Summer</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      
+                    </div>
+                   
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      
+                    </div>
+                   
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    
+                      <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+                        <div class="card shadow-lg">
+                          <img
+                            src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            height="140px"
+                          />
+                          <div class="card-body text-center">
+                            <h5>Scala dei Turchi</h5>
+                            <p class="card-text">
+                              La Scala dei Turchi di Realmonte in provincia di
+                              Agrigento è una delle mete turistiche più ambite.
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"
+              ></script>
+            </section>
+          </ul>
+        </div>
+      </div>
+    
+  </body>
+</html>
