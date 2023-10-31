@@ -19,7 +19,7 @@ Saldi
 Welcome Summer
 Last Minute
 Recensioni -->
-    <nav class="navbar navbar-expand-lg collapse-navbar mb-3">
+    <nav class="navbar navbar-expand-lg bg-light collapse-navbar mb-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <!-- 2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata. -->
@@ -63,34 +63,30 @@ Recensioni -->
                 </li>
               </ul>
               <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-info" type="button">
-                  Search
-                </button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
               </form>
-            </div>
+                  </div>
+          </ul>
         </nav>
+              
+         
             <!-- 3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
 una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto -->
-            <!-- <div class="container">
-    <button class="btn btn-success mb-4" type="buttom">
+            <div class="container">
+    <button class="btn btn-info mb-4" type="buttom">
         Destinazioni Disponibili
     </button>
-    <button class="btn btn-success mb-4" type="buttom" id="rimuovi">
+    <button class="btn btn-info mb-4" type="buttom" id="rimuovi">
         Nascondi Destinazioni Disponibili
     </button>
     
-    <button class="btn btn-success mb-4" type="button"
+    <button class="btn btn-info mb-4" type="button"
     data-bs-toggle="collapse"
           data-bs-target="#introduction"
           aria-expanded="false"
           aria-controls="introduction"
-          id="btnIntro">Home: Nascondi elemento</button> -->
+          id="btnIntro">Home: Nascondi elemento</button>
             <section class="bg-light mb-4 collapse.show" id="introduction">
               <div class="container">
                 <div class="row align-items-center">
@@ -131,24 +127,23 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                 >
                   Saldi
                 </button>
-                <section class="collapse.show" id="saldi">
+                <section class="section-saldi collapse.show" id="saldi">
                   <div class="row">
                     <div class="col-12">
                       <h2 class="section-title">Saldi</h2>
                     </div>
                   </div>
-                  <div class="row g-2 m-auto">
+                  <div class="row">
                     <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
-                      <div class="card">
+                      <div class="card article">
                         <img
                           src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
                           class="card-img-top"
                           alt="..."
                           height="170px"
                         />
-                        <div class="card-img-top">
                           <div class="card-body text-center">
-                            <h5>Scala dei Turchi</h5>
+                            <h5 class="card-title">Scala dei Turchi</h5>
                             <p class="card-text">
                               La Scala dei Turchi di Realmonte in provincia di
                               Agrigento è una delle mete turistiche più ambite.
@@ -157,7 +152,6 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                           </div>
                         </div>
                       </div>
-                    </div>
                     <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
                       <div class="card">
                         <img
@@ -166,9 +160,8 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                           alt="..."
                           height="170px"
                         />
-                        <div class="card-img-top">
                           <div class="card-body text-center">
-                            <h5>Selinunte</h5>
+                            <h5 class="card-title">Selinunte</h5>
                             <p class="card-text">
                               Tra i più grandi e suggestivi parchi archeologici
                               d'Europa, il Parco Archeologico di Selinunte si
@@ -178,8 +171,7 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                           </div>
                         </div>
                       </div>
-                    </div>
-
+                    
                     <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
                       <div class="card">
                         <img
@@ -188,9 +180,8 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                           alt="..."
                           height="170px"
                         />
-                        <div class="card-img-top">
                           <div class="card-body text-center">
-                            <h5>Etna</h5>
+                            <h5 class="card-title">Etna</h5>
                             <p class="card-text">
                               L'Etna è il vulcano più grande dell'Europa
                               (geograficamente parlando), e tra i vulcani più
@@ -199,9 +190,8 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                             <a href="#" class="btn btn-info">Prenota</a>
                           </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info">
+                    <div class="col-6 col-md-4 col-lg-3 border-2 border-info  d-md-none d-lg-block">
                       <div class="card">
                         <img
                           src="./L2-screens/img/landscape/federica-giusti-9mUPY55VZuI-unsplash.jpg"
@@ -209,9 +199,8 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                           alt="..."
                           height="170px"
                         />
-                        <div class="card-img-top">
                           <div class="card-body text-center">
-                            <h5>Scala dei Turchi</h5>
+                            <h5 class="card-title">Scala dei Turchi</h5>
                             <p class="card-text">
                               La Scala dei Turchi di Realmonte in provincia di
                               Agrigento è una delle mete turistiche più ambite.
@@ -219,7 +208,6 @@ le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e test
                             <a href="#" class="btn btn-info">Prenota</a>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </section>
@@ -240,7 +228,7 @@ In questa sezione dovranno esserci:
                   aria-controls="welcomeSummer1 "
                   id="btnWlcomeSummer"
                 >
-                  Welcome Summer
+                  Nascondi Welcome Summer
                 </button>
                 <section
                   class="collapse.show multi-collapse"
@@ -382,6 +370,7 @@ per il contenuto: il nome dovrà essere più grande del resto,
 le date dovranno essere formattate con font "monospace",
 il prezzo dovrà essere definito come "lead"
 e il badge sarà scuro -->
+<!-- 7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli. -->
 <section class="collapse.show multi-collapse" id="giorno">
   <div class="container px-0 d-none d-md-block article">
     <div class="row">
@@ -389,19 +378,124 @@ e il badge sarà scuro -->
         <h2 class="section-title">Offerta del giorno</h2>
       </div>
     </div>
-    <div class="row"></div>
+    <div class="row">
+      <div class="col-8">
+        <img src="./L2-screens/img/landscape/cefalu.jpg" alt="cefalu" class="rounded mb-4" width="100%">
+      </div>
+      <div class="col-4">
+        <h2 class="fs-1 pb-2">Cefalù</h2>
+        <p class="font-monospace pb-2">23.07.2024 - 01.08.2024</p>
+        <h3 class="font-lead pb-2">
+          Non perderti questa incredibile offerta: 600$/settimana. Prenota adesso per vivere la tua estate da sogno!
+        </h3>
+        <div class="badge bg-dark fs-5 rounded-pill">Best Offer</div>
+      </div>
+    </div>
   </div>
 </section>
+<!-- 9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci! -->
+<button class="btn btn-info d-block mb-4"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#offerta"
+aria-expanded="false"
+aria-controls="offerta"
+id="btnOfferta">
+Last Minute: Nascondi elemento
+  
+</button>
+<section class="collapse.show" id="offerta">
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Last Minute</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/saline di marsala.jpg" alt="saline di marsala" class="img-fluid rounded shadow-lg mb-3">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/nicolosi.jpg" alt="nicolosi" class="img-fluid rounded shadow-lg mb-3">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/noto.jpg" alt="noto" class="img-fluid rounded shadow-lg mb-3">
+      </div>
+      <!-- <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/palermo.jpg" alt="palermo" class="img-fluid rounded shadow-lg mb-3">
+      </div> -->
+      <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/realmonte.jpg" alt="realmonte" class="img-fluid rounded shadow-lg mb-3">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 article">
+        <img src="./L2-screens/img/landscape/cefalu.jpg" alt="cefalu" class="img-fluid rounded shadow-lg mb-3">
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- 10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra -->
+<button class="btn btn-info d-block mb-4"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#recensioni"
+aria-expanded="false"
+aria-controls="recensioni"
+id="btnRecensioni">
+Recensioni : nascondi elemento
+  
+</button>
+<section class="collapse.show" id="recensioni">
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title text-center">Recensioni</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <img src="./L2-screens/img/829466_man_512x512.png" alt="user logo" class="img-top img-fluid">
+      </div>
+      <div class="col-11">
+        <h4>User</h4>
+        <p class="mb-5 pe-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum id dolorem corporis veniam fuga iure amet tempora nemo. Praesentium nulla consequuntur, unde repellat asperiores explicabo quibusdam possimus rerum tenetur.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <img src="./L2-screens/img/219969.png" alt="user logo" class="img-top img-fluid">
+      </div>
+      <div class="col-11">
+        <h4>User</h4>
+        <p class="mb-5 pe-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum id dolorem corporis veniam fuga iure amet tempora nemo. Praesentium nulla consequuntur, unde repellat asperiores explicabo quibusdam possimus rerum tenetur.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <img src="./L2-screens/img/829466_man_512x512.png" alt="user logo" class="img-top img-fluid">
+      </div>
+      <div class="col-11">
+        <h4>User</h4>
+        <p class="mb-5 pe-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum id dolorem corporis veniam fuga iure amet tempora nemo. Praesentium nulla consequuntur, unde repellat asperiores explicabo quibusdam possimus rerum tenetur.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci". -->
+
+
               </div>
               <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
                 crossorigin="anonymous"
               ></script>
-            </section>
-          </ul>
-        </div>
-      </div>
-    
   </body>
 </html>
